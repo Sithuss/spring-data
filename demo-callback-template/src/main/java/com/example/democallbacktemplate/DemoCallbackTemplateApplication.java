@@ -1,14 +1,11 @@
 package com.example.democallbacktemplate;
 
 import com.example.democallbacktemplate.service.EmployeeService;
+import com.example.ds.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.jdbc.core.JdbcTemplate;
-
-import javax.sql.DataSource;
 
 @SpringBootApplication
 public class DemoCallbackTemplateApplication implements CommandLineRunner {
@@ -22,5 +19,19 @@ public class DemoCallbackTemplateApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         employeeService.listAllEmployee().forEach(System.out::println);
+
+        System.out.println("Average Salary:: " + employeeService.avgResultExtractor());
+
+        System.out.println("Find by email:: " + employeeService.findEmployeeByEmail("richard@gmail.com"));
+        System.out.println();
+
+        employeeService.createEmployee(new Employee(
+                7, "Thuzar", "nwe", "thuzarnew@gmal.com", 8000
+        ));
+        employeeService.listAllEmployee().forEach(System.out::println);
+
+        System.out.println("Avg native way:: "+ employeeService.avgNativeWay());
+
+        System.out.println("Avg Modern way :: " + employeeService.avgModernWay());
     }
 }
