@@ -8,16 +8,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-callback-template" />
+        <module name="zoo-demo" />
+        <module name="one-to-many-demo" />
         <module name="demo-datasource" />
-        <module name="demo-connection-jdbc" />
         <module name="datasource-standalone" />
         <module name="single-work-unit" />
-        <module name="call-back-in-java" />
+        <module name="interoperability" />
         <module name="template-design-pattern" />
+        <module name="demo-connection-jdbc" />
+        <module name="many-to-many-demo" />
+        <module name="one-to-one-demo" />
+        <module name="demo-order" />
+        <module name="call-back-in-java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo-connection-jdbcc" target="17" />
+      <module name="order-demo" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,7 +33,14 @@
       <module name="demo-connection-jdbc" options="-parameters" />
       <module name="demo-connection-jdbcc" options="-parameters" />
       <module name="demo-datasource" options="-parameters" />
+      <module name="demo-order" options="-parameters" />
+      <module name="interoperability" options="-parameters" />
+      <module name="many-to-many-demo" options="-parameters" />
+      <module name="one-to-many-demo" options="-parameters" />
+      <module name="one-to-one-demo" options="-parameters" />
+      <module name="order-demo" options="-parameters" />
       <module name="single-work-unit" options="-parameters" />
+      <module name="zoo-demo" options="-parameters" />
     </option>
   </component>
 </project>
