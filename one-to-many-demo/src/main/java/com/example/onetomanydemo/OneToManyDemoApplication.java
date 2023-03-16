@@ -32,6 +32,6 @@ public class OneToManyDemoApplication implements CommandLineRunner {
 
         JPAUtil.checkData("select * from author");
         JPAUtil.checkData("select * from book");
-//        JPAUtil.checkData("select * from book_author");
+        JPAUtil.checkData("select * from book_author");
     }
 }

@@ -17,7 +17,7 @@ public class Customer {
     private String email;
 
 
-    @OneToOne//(mappedBy = "customer")
+    @OneToOne(mappedBy = "customer")
     private Address address;
 
     public Customer() {}

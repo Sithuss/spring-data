@@ -12,6 +12,7 @@
         <module>datasource-standalone</module>
         <module>template-design-pattern</module>
         <module>call-back-in-java</module>
+        <module>spring-standalone-jpa</module>
     </modules>
 
     <properties>

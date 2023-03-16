@@ -18,7 +18,7 @@ public class Author {
     private Integer id;
     private String name;
 
-    @OneToMany(cascade = CascadeType.PERSIST, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.PERSIST, orphanRemoval = true, mappedBy = "author")
     private List<Book> books = new LinkedList<>();
 
     public void removeBook(Book book) {

@@ -29,7 +29,7 @@ public class AllService {
         Category category1 = new Category("drink");
         Category category2 = new Category("snack");
 
-        Product product1 = new Product("coke", 600.00, "to drink", LocalDate.of(2022,12,30));
+        Product product1 = new Product("coke", 600.00, "to drink", LocalDate.now());
         Product product2 = new Product("potato chips", 500.00, "to eat", LocalDate.of(2023,2,28));
 
         Customer customer = new Customer("Harry Potter", "harry@gmail.com", "0923432", "Hogward", "Griffindor", "1234123");

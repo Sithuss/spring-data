@@ -18,7 +18,7 @@ public class Address {
     private String streetNumber;
     private String city;
 
-//    @JoinColumn(name = "customer_id_fk")
+    @JoinColumn(name = "customer_id_fk")
     @OneToOne(cascade = CascadeType.PERSIST)
     private Customer customer;
     public Address() {}

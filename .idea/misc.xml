@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/inheritance-demo" />
     <file type="web" url="file://$PROJECT_DIR$/order-demo" />
   </component>
   <component name="MavenProjectsManager">
@@ -18,6 +19,9 @@
         <option value="$PROJECT_DIR$/many-to-many-demo/pom.xml" />
         <option value="$PROJECT_DIR$/zoo-demo/pom.xml" />
         <option value="$PROJECT_DIR$/demo-order/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jpa-collectiontable/pom.xml" />
+        <option value="$PROJECT_DIR$/Inheritance-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/car-demo/pom.xml" />
       </list>
     </option>
   </component>
